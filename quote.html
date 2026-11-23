@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping & FAQ — Ridwan Rattan</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="index.html">Ridwan<span> Rattan</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="quote.html" aria-current="page">Shipping & FAQ</a>
+        <a class="nav-quote" href="#estimate">My Quote <span data-cart-count>(0)</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading container">
+      <p class="eyebrow">Shipping & order estimate</p>
+      <h1>Plan your<br /><em>rattan order.</em></h1>
+      <p>
+        Review your selected items and see an indicative product total,
+        shipping estimate, and delivery timeframe.
+      </p>
+    </section>
+
+    <section class="quote-section" id="estimate">
+      <div class="container quote-layout">
+        <div class="quote-intro">
+          <p class="eyebrow">Your order</p>
+          <h2>Get a quick estimate.</h2>
+          <p>
+            Add products from the collection page, then choose a destination
+            to see an estimated order total.
+          </p>
+          <a class="text-link" href="products.html">← Browse products</a>
+        </div>
+
+        <div class="quote-card">
+          <div class="form-row">
+            <div>
+              <label for="destination">Shipping destination</label>
+              <select id="destination">
+                <option value="asia">Asia-Pacific</option>
+                <option value="europe">Europe</option>
+                <option value="north-america">North America</option>
+                <option value="other">Other destinations</option>
+              </select>
+            </div>
+            <div>
+              <label for="currency">Display currency</label>
+              <select id="currency">
+                <option value="USD">USD — US Dollar</option>
+                <option value="IDR">IDR — Indonesian Rupiah</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Your quote is empty. Add a product to get started.</p>
+          </div>
+
+          <div class="totals">
+            <div class="total-line">
+              <span>Product subtotal</span>
+              <strong id="subtotal">$0</strong>
+            </div>
+            <div class="total-line">
+              <span>Estimated shipping</span>
+              <strong id="shipping">$0</strong>
+            </div>
+            <div class="total-line grand">
+              <span>Estimated total</span>
+              <strong id="total">$0</strong>
+            </div>
+          </div>
+
+          <div class="delivery-note" id="delivery-note">
+            Add products to see an indicative delivery timeframe.
+          </div>
+
+          <button class="button copy-quote-button" id="copy-quote">Copy quote details</button>
+          <p class="small-note">
+            Shipping and delivery figures are indicative examples only.
+            Final costs and timelines depend on order dimensions, destination,
+            customs, and carrier confirmation. Taxes and import duties are not included.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <p class="eyebrow">Frequently asked questions</p>
+        <h2>Good to know.</h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>Which products are available?</summary>
+            <p>
+              Browse our products page for featured rattan chairs, baskets,
+              lamps, and tables. Contact us for other designs, custom options,
+              and wholesale availability.
+            </p>
+          </details>
+
+          <details>
+            <summary>Are the products ready to ship?</summary>
+            <p>
+              Each product card shows an example availability status.
+              Please confirm current stock and production time before ordering.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I estimate my order total?</summary>
+            <p>
+              Add products to your quote and select a destination. The displayed
+              product prices and shipping costs are examples; a final quotation
+              requires confirmation of your order details.
+            </p>
+          </details>
+
+          <details>
+            <summary>How much does shipping cost, and how long does delivery take?</summary>
+            <p>
+              Shipping costs and delivery times vary by destination, shipment
+              size, carrier, and customs clearance. Contact us for a confirmed quote.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do you accept custom or wholesale orders?</summary>
+            <p>
+              Custom designs and wholesale orders can be discussed. Share your
+              preferred product, quantity, dimensions, and destination to request
+              a tailored quotation.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a class="footer-brand" href="index.html">Ridwan Rattan</a>
+      <p>Handcrafted in Cirebon, Indonesia · Worldwide export inquiries welcome</p>
+    </div>
+  </footer>
+</body>
+</html>
